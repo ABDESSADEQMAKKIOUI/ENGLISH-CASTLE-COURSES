@@ -1,0 +1,395 @@
+body {
+	background-color: lightgray  ;
+    background-image: url("../images/motif.png");
+	opacity: 100%;
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+header {
+
+	color: #FFFFFF;
+	display: flex;
+}
+.logo{ 
+	width: 100px;
+	height: 140px;
+	border: solid 2px white;
+}
+
+header div {		 
+	/*border: solid 2px white;*/
+	text-align: center;		
+	top: 40px;
+	flex:3;
+}
+.mainContainer{
+	display: flex;
+}
+.mediumArticle {
+	flex: 3;
+	background-color: white;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+/*******************************/
+footer {
+	background-color: #2B2D42;
+	color: #FFFFFF;
+	padding: 10px;
+	text-align: center;
+}
+/***navbar styles ***/
+
+nav {
+	overflow: hidden;
+	background-color: #c8102e; 
+	
+}
+
+nav a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.subnav {
+	float: left;
+	overflow: hidden;
+}
+
+.subnav .subnavbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+nav a:hover, .subnav:hover .subnavbtn {
+	background-color: #2B2D42;
+}
+
+.subnav-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: #2B2D42;
+	width: 100%;
+	z-index: 1;
+
+	
+}
+
+.subnav-content a {
+	float: left;
+	color: white;
+	text-decoration: none;
+}
+
+.subnav-content a:hover {
+	background-color: #2B2D42;
+	color: #c8102e;
+	display: block;
+}
+
+.subnav:hover .subnav-content {
+	display: block;
+}
+/** Card styles***/
+.roundedTop { 
+	border-radius: 20px 20px 0 0;
+	
+}
+.card {
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;  
+	border-radius: 20px;  
+	width: 20%; height: auto; 
+	background-color: white;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.TextOfCard {
+	padding: 2px 16px; 
+	
+}
+.slideshow {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+	margin-top: -77px;
+	animation: changeBackground 10s infinite;
+  }
+
+  .slide {
+	width: 100%;
+    display: none;
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 89vh; /* Set maximum image height */
+  }
+
+  .slide p {
+    position: absolute;
+    bottom: 40%;
+    left: 10px;
+    color: #2B2D42;
+    padding: 5px 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:large;
+  }
+  .side-content {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 40%;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+ 
+  }
+  @keyframes changeBackground {
+    0%, 100% {
+      background-image: url('images/bg_1.jpg');
+    }
+    25% {
+      background-image: url('images/adult_learning.png');
+    }
+    50% {
+      background-image: url('images/about.jpg');
+    }
+    75% {
+      background-image: url('images/biology-3.jpeg');
+    }
+  }
+  .course-meta-area {
+	background: #edf4f6;
+	padding: 35px 0;
+}
+
+.course-meta-area .course-note {
+	display: inline-block;
+	background: #c8102e;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 4px 15px;
+	margin-bottom: 20px;
+}
+
+.course-metas {
+	padding-top: 50px;
+	margin-bottom: 45px;
+	display: table;
+}
+
+.course-meta {
+	display: table-cell;
+	height: 100%;
+	border-right: 2px solid #c5ced0;
+	padding: 5px 50px;
+}
+
+.course-meta:nth-child(1) {
+	padding-left: 0;
+}
+
+.course-meta:nth-child(4) {
+	padding-right: 0;
+	border-right: none;
+}
+
+.course-meta p {
+	margin-bottom: 0;
+}
+
+.course-meta .course-author .ca-pic {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	float: left;
+}
+
+.course-meta .course-author h6 {
+	padding-left: 60px;
+}
+
+.course-meta .course-author p {
+	padding-left: 60px;
+	margin-bottom: 0;
+	padding-top: 4px;
+	font-weight: 600;
+}
+
+.course-meta .course-author p span {
+	color: #c8102e;
+}
+
+.course-meta .cm-info h6 {
+	margin-bottom: 3px;
+}
+
+.course-meta .cm-info p {
+	font-weight: 600;
+}
+
+.course-meta .rating {
+	padding-left: 15px;
+	font-size: 12px;
+}
+
+.course-meta-area .site-btn {
+	min-width: auto;
+	font-size: 14px;
+}
+
+.course-meta-area .price-btn {
+	padding: 20px 30px;
+	background: #474747;
+	margin-right: 10px;
+}
+
+.course-meta-area .buy-btn {
+	padding: 20px 40px;
+}
+
+.course-preview {
+	padding-top: 37px;
+	margin-bottom: 55px;
+}
+
+.course-list .cl-item {
+	margin-bottom: 55px;
+}
+
+.course-list .cl-item h4 {
+	margin-bottom: 46px;
+}
+
+.course-list .cl-item p {
+	margin-bottom: 0;
+}
+
+.realated-courses {
+	background: #edf4f6;
+}
+
+.realated-courses .rc-title {
+	font-size: 34px;
+	margin-bottom: 85px;
+}
+
+.realated-courses .course-item .course-info {
+	background: #fff;
+}
+
+.realated-courses .owl-next {
+	position: absolute;
+	right: -80px;
+	top: 50%;
+	margin-top: -27px;
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	padding-top: 10px;
+	background: #c8102e;
+}
+.search-warp {
+	background: #c8102e;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.search-warp .section-title {
+	margin-bottom: 30px;
+}
+
+.course-search-form {
+	background: #fff;
+	padding: 44px 38px;
+}
+
+.course-search-form input[type=text],
+.course-search-form input[type=email] {
+	height: 56px;
+	width: 36.6%;
+	padding: 0 30px;
+	margin-right: 18px;
+	float: left;
+	border: none;
+	font-size: 14px;
+	background: #edf4f6;
+}
+
+.course-search-form input[type=text]:focus,
+.course-search-form input[type=email]:focus {
+	border-bottom: 2px solid #c8102e;
+}
+
+.course-search-form .site-btn {
+	min-width: 198px;
+	padding: 16px 10px;
+}
+
+.search-section.ss-other-page {
+	margin-top: -85px;
+}
+
+.search-section.ss-other-page .search-warp {
+	position: relative;
+	padding: 60px 0;
+}
+
+.search-section.ss-other-page .section-title {
+	margin-bottom: 0;
+}
+
+.search-section.ss-other-page .section-title h2 {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 100%;
+	font-size: 24px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.search-section.ss-other-page .section-title h2 span {
+	display: inline-block;
+	background: #c8102e;
+	padding: 20px 60px 10px;
+}
+
+.search-section.ss-other-page .course-search-form {
+	background-color: transparent;
+	padding: 0;
+}
+
+.search-section.ss-other-page .course-search-form input[type=text]:focus,
+.search-section.ss-other-page .course-search-form input[type=email]:focus {
+	border-bottom: none;
+}
